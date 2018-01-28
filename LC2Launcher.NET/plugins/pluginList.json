@@ -1,0 +1,23 @@
+{
+	"Title":"LetzteChance.Org JSON Title List",
+	"name":"pluginIndex.json",
+	"Bean": "letztechance.org.spring.beans.List",
+	"id": "list",
+	"home": "list.xsl",
+	"xslin": "list.input.xsl",
+	"xsl": "list.xsl",
+	"html":"list.html",
+	"Beans": "index",
+	"Plugins": "dbindex",
+	"Date": "10.01.2018",
+	"Version": "0.12137",
+	"Config": [
+		{
+			"name": "LetzteChance.Org JSON Config List",
+			"user": "root",
+			"password": "",
+			"database": "lc",
+			"Version": "0.133446"
+		}		
+	]
+}

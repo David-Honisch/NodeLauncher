@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+                http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans.xsd
+                http://www.springframework.org/schema/util
+                http://www.springframework.org/schema/util/spring-util.xsd">
+                
+	<bean id="home" class="letztechance.org.spring.beans.Home"/>
+	<bean id="index" class="letztechance.org.spring.beans.Index"/>
+	<bean id="list" class="letztechance.org.spring.beans.List"/>
+	<bean id="read" class="letztechance.org.spring.beans.Read"/>
+	
+	<bean id="excel" class="letztechance.org.spring.beans.Excel"/>
+	<bean id="pdf" class="letztechance.org.spring.beans.PDF"/>
+	<bean id="word" class="letztechance.org.spring.beans.Word"/>
+	
+	<bean id="mysqlcheck" class="letztechance.org.spring.beans.MySQLCheck"/>
+
+    <bean id="encyclopedia" class="HardcodedEncyclopedia"/>
+
+    <bean id="oracle" class="letztechance.org.spring.boot.BookwormOracle">
+        <property name="encyclopedia" ref="letztechance.org.spring.boot.encyclopedia"/>
+    </bean>
+
+
+
+</beans>

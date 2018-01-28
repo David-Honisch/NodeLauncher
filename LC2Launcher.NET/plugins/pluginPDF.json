@@ -1,0 +1,23 @@
+{
+	"Title":"LetzteChance.Org JSON Title PDF",
+	"name":"pluginPDF.json",
+	"Bean": "letztechance.org.spring.beans.PDF",
+	"id": "pdf",
+	"home": "pdf.xls",
+	"xslin": "pdfin.xsl",
+	"xsl": "pdf.xsl",
+	"html":"pdf.html",
+	"Beans": "am",
+	"Plugins": "dbhome",
+	"Date": "10.01.2018",
+	"Version": "0.113",
+	"Config": [
+		{
+			"name": "LetzteChance.Org JSON Config PDF",
+			"user": "root",
+			"password": "",
+			"database": "lc",
+			"Version": "0.133446"
+		}		
+	]
+}

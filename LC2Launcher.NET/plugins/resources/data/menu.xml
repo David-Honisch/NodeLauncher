@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<div id="headmain">
+	<div id="mainmenu">
+		[
+		<a href="lc:home;home">home</a>
+		]
+		[
+		<a href="lc:index;index">index</a>
+		]
+		[
+		<a href="lc:list;list">list</a>
+		]
+		[
+		<a href="lc:read;read">read</a>
+		]
+		[
+		<a href="lc:mysqlcheck;mysqlcheck">MySQL Check</a>
+		]
+		[
+		<a href="lc:excel;excel">excel</a>
+		]
+		[
+		<a href="lc:pdf;pdf">pdf</a>
+		]
+		[
+		<a href="lc:word;word">word</a>
+		]
+	</div>
+	<div id="submenu">
+		[
+		<a href="lc:home;home">edit</a>
+		]
+		[
+		<a href="lc:index;index">remove</a>
+		]
+		[
+		<a href="lc:list;list">register</a>
+		]	
+	</div>
+</div>

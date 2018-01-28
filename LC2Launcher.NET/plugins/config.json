@@ -1,0 +1,75 @@
+{
+	"Title": "LetzteChance.Org JSON Title",
+	"Bean": "home",
+	"Beans": "am",
+	"PluginName": "dbhome",
+	"Date": "10.01.2018",
+	"Version": "0.3",
+	"Plugins": [
+		{
+			"name": "LetzteChance.Org JSON Title Home",
+			"id": "home",
+			"class": "home",
+			"config": "pluginHome.json",
+			"Date": "10.01.2018",
+			"Version": "0.3"
+		},
+		{
+			"name": "LetzteChance.Org JSON Title MySQL Check",
+			"id": "mysqlcheck",
+			"class": "mysqlcheck",
+			"config": "pluginMySQLCheck.json",
+			"Date": "10.01.2018",
+			"Version": "0.31"
+		},
+		{
+			"name": "LetzteChance.Org JSON Title Index",
+			"id": "index",
+			"class": "index",
+			"config": "pluginIndex.json",
+			"Date": "10.01.2018",
+			"Version": "0.31"
+		},
+		{
+			"name": "LetzteChance.Org JSON Title List",
+			"id": "list",
+			"class": "list",
+			"config": "pluginList.json",
+			"Date": "10.02.2018",
+			"Version": "0.32"
+		},
+		{
+			"name": "LetzteChance.Org Read",
+			"id": "read",
+			"class": "read",
+			"config": "pluginRead.json",
+			"Date": "10.03.2018",
+			"Version": "0.33"
+		},
+		{
+			"name": "LetzteChance.Org Excel",
+			"id": "excel",
+			"class": "excel",
+			"config": "pluginExcel.json",
+			"Date": "11.03.2018",
+			"Version": "0.2"
+		},
+		{
+			"name": "LetzteChance.Org PDF",
+			"id": "pdf",
+			"class": "pdf",
+			"config": "pluginPDF.json",
+			"Date": "11.03.2018",
+			"Version": "0.2"
+		},
+		{
+			"name": "LetzteChance.Org Word",
+			"id": "word",
+			"class": "word",
+			"config": "pluginWord.json",
+			"Date": "10.03.2018",
+			"Version": "0.33"
+		}
+		
+	]
+}

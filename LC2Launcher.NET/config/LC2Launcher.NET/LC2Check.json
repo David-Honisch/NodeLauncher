@@ -1,0 +1,20 @@
+{
+	"id": "1.22",
+ 	"Name": "LC3Config Check",
+	"Download": "http://www.letztechance.org/upload/dl.php?id=7",
+    "install": [
+        {           	
+			".\\js\\jquery": "http://www.letztechance.org/upload/dl.php?id=7",
+        	".\\js\\jqgrid": "http://www.letztechance.org/upload/dl.php?id=8",
+        	".\\js\\jquery-ui-1.11.0": "http://www.letztechance.org/upload/dl.php?id=6",
+        	".\\js\\jquery-ui-themes-1.11.0": "http://www.letztechance.org/upload/dl.php?id=9",
+			".\\js\\jquery.treeview": "http://www.letztechance.org/upload/dl.php?id=5",
+        	".\\js\\main": "http://www.letztechance.org/upload/dl.php?id=4"			
+        }
+    ],
+   
+    "databasetype": "hana",
+    "dependencies": {
+        "jquery": ">=1.9.1"
+    }
+}
