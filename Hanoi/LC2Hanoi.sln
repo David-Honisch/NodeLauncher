@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChangePWD", "ChangePWD.vcxproj", "{43871D11-7946-4891-856F-5C3514D41D42}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LC2HanoiMain", "LC2HanoiMain.vcxproj", "{43871D11-7946-4891-856F-5C3514D41D42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +26,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {9FA2F81F-71F7-4B4D-A315-7F260908A176}
+		SolutionGuid = {5A5855A5-B4DA-4473-A262-840EC24568AF}
 	EndGlobalSection
 EndGlobal
