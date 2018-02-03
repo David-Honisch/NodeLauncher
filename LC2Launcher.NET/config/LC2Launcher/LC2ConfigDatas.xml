@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfLC2ConfigData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LC2ConfigData>
+    <Title>LetzteChance.Org - Windows Client</Title>
+    <Version>0.91</Version>
+    <isLeftVisible>0</isLeftVisible>
+    <isMenuVisible>0</isMenuVisible>
+    <isCenter>1</isCenter>
+    <isFilled>0</isFilled>
+    <isInfoVisible>0</isInfoVisible>
+    <isDockable>0</isDockable>
+    <isAlignLeft>0</isAlignLeft>
+	<isNotMoveable>0</isNotMoveable>
+	<isQuitButtonActive>0</isQuitButtonActive>
+	<isTransparentColorActive>1</isTransparentColorActive>
+	
+    <Height>600</Height>
+    <Width>800</Width>	
+    <ColorR>0</ColorR>
+    <ColorG>0</ColorG>
+    <ColorB>0</ColorB>	
+	<bgImage>background2.jpg</bgImage>
+	<URL>./html/news.html</URL>
+	<UpdateURL>http://www.letztechance.org/webservices/client.php?q=getListJSON&amp;value1=1&amp;value2=1</UpdateURL>
+	
+    <User>anonymous</User>
+    <Password>anonymous</Password>
+    <Database>letztechance</Database>
+    <plugins>LC2Config.dll;LC2News.dll;LC2Index.dll;</plugins>
+    <Description>LetzteChance.Org - Windows Client</Description>
+    <SAPbouiCOMGuid>{6048236A-956D-498D-A6F1-9C81C13AB6E8}</SAPbouiCOMGuid>
+    <SAPbouiCOMVersionMajor>6</SAPbouiCOMVersionMajor>
+    <SAPbouiCOMVersionMinor>8</SAPbouiCOMVersionMinor>
+    <SAPbobsCOMGuid>{FC8030BE-F5D2-4B8E-8F92-44228FE344CD}</SAPbobsCOMGuid>
+    <SAPbobsCOMVersionMajor>2005</SAPbobsCOMVersionMajor>
+    <SAPbobsCOMVersionMinor>0</SAPbobsCOMVersionMinor>
+  </LC2ConfigData>
+</ArrayOfLC2ConfigData>

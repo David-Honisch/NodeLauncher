@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script type="text/javascript" src="../js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jqgrid/src/jquery.fmatter.js"></script>
+<script type="text/javascript" src="../js/jqgrid/grid.locale-en.js"></script>
+<script type="text/javascript" src="../js/jqgrid/jqGridView.js"></script>
+<script type="text/javascript" src="../js/jqgrid/jquery.jqGrid.js"></script>
+
+<link rel="Stylesheet" media="all" type="text/css"	href="../js/jqgrid/css/ui.jqgrid.css">
+<link rel="Stylesheet" media="all" type="text/css"	href="../js/jqgrid/css/gridview.css">
+<link rel="stylesheet"	type="text/css" href="../js/jqgrid/css/ui.jqgrid.css" />	
+<!--
+<script type="text/javascript" src="/js/ajax.js"></script>
+<script type="text/javascript" src="/js/dc.js"></script>
+<script type="text/javascript" src="/js/fw/ajax.js"></script>
+<script type="text/javascript" src="/js/fw/fw.js"></script>
+<script type="text/javascript" src="/js/popup.js"></script>
+<script type="text/javascript" src="/js/date.js"></script>
+<script type="text/javascript" src="/js/env.js"></script>
+<script type="text/javascript" src="/js/jmenu.js"></script>
+<script type="text/javascript" src="/js/path.js"></script>
+<script type="text/javascript" src="/js/panel.js"></script>
+<script type="text/javascript" src="../js/swfobject/swfobject.js"></script>
+-->
+
+<script type="text/javascript" src="../js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui-1.11.0/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/jquery/jquery-migrate-1.2.1.js"></script>
+<script type="text/javascript" src="../js/jquery/ui/jquery-ui.js"></script>
+<script type="text/javascript" src="../js/jquery/jquery_mousewheel.js"></script>
+<script type="text/javascript" src="../js/jqgrid/js/i18n/grid.locale-en.js"></script>
+<script type="text/javascript" src="../js/jqgrid/jquery.jqGrid.js"></script>
+<script type="text/javascript" src="../js/jquery.treeview/lib/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/jquery.treeview/jquery.treeview.js"></script>
+<script type="text/javascript" src="../js/jquery/jquery.mousewheel-3.0.6.pack.js"></script>
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="../js/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="../js/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="../js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="../js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="../js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="../js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="../js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	<script type="text/javascript" src="../js/fancybox/images.js?v=1.0.6"></script>
+<script type="text/javascript" src="../js/main/main.js"></script>
+
+<link rel="stylesheet" href="../js/jquery-ui-themes-1.11.0/themes/smoothness/theme.css">
+<link rel="stylesheet"	type="text/css" href="../js/jqgrid/css/ui.jqgrid.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/js/jquery.treeview/jquery.treeview.css" />
+<link rel="Stylesheet" media="all" type="text/css" href="./css/core.css">
+
+
+</head>
+<style>
+#gview_list
+{
+	width:100%;
+	height:480px;
+}
+</style>
+<body>
+<script>//jQuery.noConflict();
+jQuery(document).ready(
+			function() {
+				jQuery("#index_records1").jqGrid(
+						{
+							url : "../index.json",
+							datatype : "json",
+							mtype : "GET",
+							defaults : {
+								recordtext : "View {0} - {1} of {2}",
+								emptyrecords : "No records to view",
+								loadtext : "Loading...",
+								pgtext : "Page {0} of {1}"
+							},
+							colNames : [ "Id", "Name", "Link" ],
+							colModel : [ {
+								name : 'id',
+								index : 'id',
+								width : 20
+							}, {
+								name : 'name',
+								index : 'name',
+								width : 100,
+								sortable : false,
+								editable : false
+							}, {
+								name : 'table_name',
+								index : 'link',
+								width : 50,
+								editable : false
+							}
+							],
+							onSelectRow: function (id) 
+							{ 
+								//window.location =  "http://www.letztechance.org/mobile/list-"+id+".html"; 
+								window.open('http://www.letztechance.org/list-'+id+'.html','_blank'); 
+							},
+							/*
+							 onSelectRow: function (id) {
+								 if (id && id !== lastsel) { lastsel = id; } }
+								   });
+							 */
+							pager: jQuery("#indexperpage1"),
+							rowNum : 1000,
+							rowList : [ 10, 20, 30, 40, 50, 60, 70, 80, 90,
+									100, 500000 ],
+							rowTotal : 100000,
+							rowNum : pageSize,
+							//page : 1000,
+							//pages : 10000,
+							recordtext : "View {0} - {1} of {2}",
+							emptyrecords : "No records to view",
+							loadtext : "Loading...",
+							pgtext : "Page {0} of {1}",
+
+							//recordtext: "View {0} - {1}",
+							//recordtext : "View {0} - {1}",
+
+							loadui : "enable",
+							//loadui : "block",
+							loadonce : false,
+							sortname : "id",
+							sortorder : "desc",
+							editurl : "getGridData.php",
+							caption : "Using navigator",
+							height : 'auto',
+							viewrecords : true,
+							gridview : true,
+							width : 800,
+							autowidth : true,
+							shrinkToFit : true,
+							multiselect : true,
+							//scroll : 1,
+							rownumbers : true,
+							caption : "Index"
+						});
+				//
+				//jQuery('#index_records1').setGridParam({page:lastPage});
+				var totalPages = jQuery('#index_records1').getGridParam('lastpage');
+				var pageSize = jQuery('#index_records1').getGridParam('rowNum');
+				jQuery('#indexperpage').setGridParam({
+					rowNum : 10000
+				}).trigger("reloadGrid");
+				jQuery("#index_records1").jqGrid('navGrid', "#indexperpage1", {
+					next : true,
+					refresh : true,
+					edit : false,
+					add : false,
+					del : false
+				});
+				jQuery("#index_records1").jqGrid('inlineNav', "#indexperpage1");
+			});
+</script>
+<a href="index.html">Index</a>|<a href="news.html">News</a>
+<table id="index_records1">
+	<tr>
+		<td></td>
+	</tr>
+</table>
+<div id="indexperpage1"></div>
+<div id="log"></div>
+<input type="button" value="Refresh" onclick="location.reload();">
+</body>
+</html>
