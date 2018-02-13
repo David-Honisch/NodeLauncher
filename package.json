@@ -1,0 +1,29 @@
+{
+  "name": "test2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "read.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "child_process": "^1.0.2",
+    "csv-headers": "^1.0.0",
+    "csv-parse": "^2.0.0",
+    "del": "^3.0.0",
+    "express": "^4.16.2",
+    "get-stdin": "^5.0.1",
+    "get-urls": "^7.2.0",
+    "json2csv": "^3.11.5",
+    "linkscrape": "^1.0.0",
+    "match": "^1.2.8",
+    "meow": "^4.0.0",
+    "nodeJs-zip": "^1.0.4",
+    "paktc": "^1.0.1",
+    "sqlite3": "^3.1.13",
+    "website-scraper": "^3.3.2"
+  }
+}
