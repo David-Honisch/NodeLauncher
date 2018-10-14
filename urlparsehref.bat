@@ -26,16 +26,5 @@ rem echo call node urlparsehref.js out.html https://www.exxoshost.co.uk/atari/ga
 @echo off
 call node urlparsehref.js https://www.exxoshost.co.uk/atari/games/automation/AUTOMATION2015A.htm nodejs 1 2 3 > %out%
 type %out%
-rem echo call node json2csv.js %out%
-rem echo call node csv2sqlite3.js %out% lc.db urls
-rem call node csv2sqlite3.js %out% lc.db urls
-rem echo json2csv -i %out% -f
-pause
-echo call node LC2json2csv.js %out%
-call node LC2json2csv.js %out%
-pause
-echo Storing data to SQLite Database
-call store.bat
-@echo off
-rem call storefiles.bat
+call import.bat
 @echo on

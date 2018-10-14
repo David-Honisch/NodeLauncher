@@ -52,6 +52,8 @@ scrapePage.prototype.doScrape = function (targetFile, urls) {
         }
         var IO = require('../../js/io/io.js');
         var io = new IO();
+        // console.log('Target:'+targetFile);
+        // console.log('Target:'+result);
         io.writeFileSync(targetFile + '.json', JSON.stringify(result));
         console.log(JSON.stringify(result));
     }).catch((err) => {
@@ -81,7 +83,7 @@ scrapePage.prototype.doGetUrls = function (url) {
 
         res.on("end", function () {
             util.log(content);
-            console.log('Reading links:');
+            // console.log('Reading links:');
             // var links = getUrls(content);
             var links = this.getHyperLinks(content);
             // console.log('Printing links:'+links.length);

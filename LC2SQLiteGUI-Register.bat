@@ -1,0 +1,8 @@
+@echo off
+cls
+setlocal ENABLEEXTENSIONS
+echo Reading Registry
+set KEY_NAME="HKEY_CURRENT_USER\SOFTWARE\LetzteChance.Org\LC2CSVSQLite"
+set VALUE_NAME=%time%
+REG ADD %KEY_NAME% /v %VALUE_NAME%
+REG QUERY %KEY_NAME% /v %VALUE_NAME%

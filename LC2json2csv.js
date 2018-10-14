@@ -13,7 +13,12 @@ function JSON2CSV(options) {
         for (var v in data) {
           result += data[v] + ';\n';
         }
-        io.writeFileSync('./save/import.csv', result);
+        var strImportFile = 'import.csv';
+        if (process.argv.length > 3) {
+          console.log('Arg:'+process.argv[3]);
+          strImportFile = process.argv[3];
+        }
+        io.writeFileSync(strImportFile, result);
       }
     }
     else {
